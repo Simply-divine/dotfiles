@@ -21,9 +21,9 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " Trigger configuration. Do not use <tab> if you use YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<S-t>"
-let g:UltiSnipsJumpForwardTrigger="<S-f>"
-let g:UltiSnipsJumpBackwardTrigger="<S-b>"
+let g:UltiSnipsExpandTrigger="<C-t>"
+let g:UltiSnipsJumpForwardTrigger="<C-f>"
+let g:UltiSnipsJumpBackwardTrigger="<C-b>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -55,10 +55,11 @@ call plug#begin('~/.vim/plugged')
 " use pre build, add 'vim-plug' to the filetype list so vim-plug can update this plugin
 " see: https://github.com/iamcco/markdown-preview.nvim/issues/50
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " If you have nodejs and yarn
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'preservim/nerdcommenter'
+
 
 " Initialize plugin system
 call plug#end()
@@ -189,6 +190,7 @@ nmap <C-p> <Plug>MarkdownPreviewToggle
 
 "auto start nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
 
 "set fuzzy search for vim
 set rtp+=~/.fzf
