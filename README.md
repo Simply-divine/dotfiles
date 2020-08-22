@@ -3,6 +3,7 @@ My vim configurations
 
 # My .vimrc configurations
 
+
 - MarkdownPreview (for markdown files)
 - YouCompleteme (auto-complete suggestions)
 - fzf (fuzzy search)
@@ -14,4 +15,5 @@ My vim configurations
 # VSCode
 
 - added cpp init snippet for vscode ( I use it for competitive programming)
+
 
