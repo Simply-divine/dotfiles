@@ -11,5 +11,7 @@ My vim configurations
 - nerd-commenter ( for comments)
 - some other customizations and mappings
 
+# VSCode
 
+- added cpp init snippet for vscode ( I use it for competitive programming)
 
